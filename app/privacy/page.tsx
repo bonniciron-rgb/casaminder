@@ -14,14 +14,14 @@ const policySections = [
     ],
     list: [
       "Business name: CasaMinder",
-      "Legal entity: [insert legal entity name]",
+      "Legal entity: LUCIDA ORIGEM, UNIPESSOAL, LDA",
       "Website: https://casaminder.com",
       "Email: hello@casaminder.com",
       "WhatsApp: +351 961 747 456",
       "Service areas: Lisbon, Setubal and surrounding areas in Portugal",
     ],
     closing:
-      "For the purposes of data protection law, [insert legal entity name] is the data controller for the personal data described in this policy.",
+      "For the purposes of data protection law, LUCIDA ORIGEM, UNIPESSOAL, LDA is the data controller for the personal data described in this policy.",
   },
   {
     heading: "2. What personal data we collect",
@@ -253,7 +253,7 @@ export default function PrivacyPage() {
           ))}
 
           <section className="border-t border-stone-200 pt-8">
-            <p className="font-semibold text-charcoal">Last updated: [insert date]</p>
+            <p className="font-semibold text-charcoal">Last updated: May 14, 2026</p>
           </section>
         </div>
       </div>
