@@ -67,10 +67,6 @@ export function LeadForm() {
             <option>Other</option>
           </select>
         </label>
-        <label className="grid gap-2 text-sm font-semibold text-charcoal">
-          How often is the property empty?
-          <input name="emptyFrequency" className="rounded-xl border border-stone-200 px-4 py-3 font-normal outline-none focus:border-coastal" />
-        </label>
       </div>
 
       <fieldset className="mt-6">
