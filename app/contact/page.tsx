@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { ButtonLink } from "@/components/ButtonLink";
 import { LeadForm } from "@/components/LeadForm";
 import { SectionHeader } from "@/components/SectionHeader";
-import { contactEmail, whatsappDisplay } from "@/lib/site-data";
+import { buildWhatsAppUrl, contactEmail, whatsappDisplay } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const quickMessage = "Hello CasaMinder, I would like to book a property check for my property in Portugal.";
+
   return (
     <main>
       <section className="px-4 py-20 sm:px-6 lg:px-8">
@@ -43,7 +46,17 @@ export default function ContactPage() {
                     {whatsappDisplay}
                   </a>
                 </p>
-                <p>WhatsApp CTA text: Hello CasaMinder, I would like to book a property check. My property is in [location]. I need help with [services].</p>
+                <div className="flex flex-col gap-3 pt-2">
+                  <a
+                    href={`mailto:${contactEmail}?subject=${encodeURIComponent("Property check enquiry")}&body=${encodeURIComponent(quickMessage)}`}
+                    className="inline-flex min-h-11 items-center justify-center rounded-full bg-charcoal px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-stone-800"
+                  >
+                    Email CasaMinder
+                  </a>
+                  <ButtonLink href={buildWhatsAppUrl(quickMessage)} variant="secondary" className="w-full bg-white">
+                    Message on WhatsApp
+                  </ButtonLink>
+                </div>
               </div>
             </div>
           </div>
