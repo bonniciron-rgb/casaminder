@@ -347,6 +347,170 @@ const guideArticles: Record<string, GuideArticle> = {
       "If you own a property in Lisbon, Setubal or the surrounding areas and want local support without turning your home into a full rental operation, book a CasaMinder property check. We will review the property, provide a clear update and help you decide what level of care makes sense while you are away.",
     ],
   },
+  "winter-empty-home-checks": {
+    intro: [
+      "Leaving a property empty for winter in Portugal needs a little more planning than many owners expect. While Portuguese winters are mild compared with northern Europe, they can still bring heavy rain, damp air, strong coastal winds, colder nights and long periods of humidity. For a home that is lived in every day, these conditions are usually manageable. For a home that is closed for weeks or months, small issues can develop quietly.",
+      "This is especially true for second-home owners, expats, Portuguese owners living abroad and landlords with occasionally empty properties. Whether your home is in Lisbon, Setubal, Azeitao, Sesimbra, Almada, Montijo or nearby, a winter departure checklist can help you leave the property in a safer, cleaner and more controlled condition.",
+      "This guide covers what to check before leaving your home empty for winter, and why regular local checks can be useful when you are not nearby.",
+    ],
+    sections: [
+      {
+        heading: "Damp and ventilation",
+        content: [
+          { type: "paragraph", text: "Damp is one of the main winter concerns for empty homes in Portugal. It is not always caused by a major building problem. Sometimes it appears simply because the property is closed, the air is still, and rooms are not being warmed or ventilated." },
+          { type: "paragraph", text: "Bathrooms, wardrobes, storage rooms, north-facing bedrooms and older properties are often more vulnerable. Coastal areas can also feel humid for long periods, especially near the river, sea or shaded streets." },
+          { type: "paragraph", text: "Before leaving, walk through each room and look for early warning signs. Check corners, ceilings, window frames, wardrobes, bathroom walls and areas behind furniture. If you already see mould, water marks or a musty smell, deal with it before closing the property." },
+          { type: "paragraph", text: "Helpful steps include:" },
+          {
+            type: "list",
+            items: [
+              "Leave internal doors open where possible",
+              "Keep wardrobe doors slightly open if the room is prone to damp",
+              "Move furniture slightly away from external walls",
+              "Avoid leaving damp towels, bath mats or laundry",
+              "Use moisture absorbers in enclosed spaces",
+              "Clean bathrooms thoroughly before departure",
+              "Make sure windows are properly closed but rooms are not packed too tightly",
+              "Ask someone local to air the property during longer absences",
+            ],
+          },
+          { type: "paragraph", text: "Good property care Portugal is often about simple, regular attention. A home does not need to be occupied every day to be cared for, but it should not be left completely unchecked for the whole winter." },
+        ],
+      },
+      {
+        heading: "Water shutoff or checks",
+        content: [
+          { type: "paragraph", text: "Water is one of the areas owners should think about carefully before leaving a property empty. A small leak can cause damage if nobody notices it for several weeks. In apartments, it can also affect neighbours or common areas." },
+          { type: "paragraph", text: "Depending on your property, you may decide to turn off the mains water supply before leaving. This can reduce the risk of leaks while the property is empty. However, it is not always suitable for every home, especially if irrigation, heating systems, boilers, appliances or other systems need water access." },
+          { type: "paragraph", text: "If you are not sure what is appropriate, ask a qualified professional or someone who understands the property setup. The important point is to make a clear decision rather than simply locking up and hoping everything remains fine." },
+          { type: "paragraph", text: "Before you leave:" },
+          {
+            type: "list",
+            items: [
+              "Check under sinks",
+              "Look around toilets and bidets",
+              "Check the boiler or water heater area",
+              "Look near washing machine and dishwasher connections",
+              "Make sure taps are fully closed",
+              "Check outdoor taps and hoses",
+              "Look for stains, swelling, damp smells or dripping",
+              "Confirm where the main water shutoff is located",
+              "Make sure your local contact knows how to turn the water off if needed",
+            ],
+          },
+          { type: "paragraph", text: "If you prefer to keep the water on, regular checks become more important. This is where absent owner property services can be helpful, especially for owners who live abroad or only return to Portugal a few times a year." },
+        ],
+      },
+      {
+        heading: "Drains, taps and toilets",
+        content: [
+          { type: "paragraph", text: "Drains, taps and toilets are easy to forget before leaving, but they matter in an empty home. Bad smells, slow drains, dry traps and small plumbing issues can become unpleasant by the time you return." },
+          { type: "paragraph", text: "Before departure, run taps briefly and check that water drains properly. Flush toilets and make sure they refill correctly. Look for constant running water, weak flushing, slow drainage or unusual smells." },
+          { type: "paragraph", text: "Kitchen sinks, bathroom basins, showers and utility areas should be left clean and free of food waste, hair or residue. Do not leave standing water in buckets, plant trays or unused containers." },
+          { type: "paragraph", text: "A simple plumbing check should include:" },
+          {
+            type: "list",
+            items: [
+              "Run each tap and check drainage",
+              "Flush each toilet",
+              "Check for slow drains",
+              "Clean shower and sink drains",
+              "Remove food waste from kitchen areas",
+              "Check for smells from unused bathrooms",
+              "Make sure toilet lids are closed",
+              "Ask your property checker to run taps and flush toilets during longer absences, if appropriate",
+            ],
+          },
+          { type: "paragraph", text: "These small steps are part of sensible second home care Portugal. They are not complicated, but they help keep the home fresher and easier to reopen after winter." },
+        ],
+      },
+      {
+        heading: "Post and access",
+        content: [
+          { type: "paragraph", text: "A full post box is one of the clearest signs that a property is empty. It can also mean you miss important letters from utility providers, the condominium, the bank, local services or suppliers." },
+          { type: "paragraph", text: "Before leaving for winter, decide how post will be handled. If you have a trusted neighbour, friend or local property care provider, ask them to collect it regularly. If important documents are expected, make sure someone can photograph or forward them to you." },
+          { type: "paragraph", text: "Access is equally important. Winter is when unexpected issues are more likely to need attention: a leak after heavy rain, a blown fuse, a building notice, a contractor visit or a neighbour needing urgent access." },
+          { type: "paragraph", text: "Before departure, make sure:" },
+          {
+            type: "list",
+            items: [
+              "A trusted person has a spare key",
+              "Keys are clearly organised",
+              "Alarm instructions are written down if needed",
+              "Your local contact knows how to access the building",
+              "Condominium contacts are available",
+              "Emergency contacts are easy to find",
+              "Contractors can be let in if required",
+              "You know who can check the property after bad weather",
+            ],
+          },
+          { type: "paragraph", text: "For owners in the capital, property checks Lisbon can be especially useful because many homes are in shared buildings. Notices, access issues, maintenance works and neighbour concerns often need someone local to respond or at least keep the owner informed." },
+        ],
+      },
+      {
+        heading: "Outdoor areas",
+        content: [
+          { type: "paragraph", text: "Outdoor areas need attention before winter, especially in properties with terraces, balconies, gardens, pools, gates or roof access. Strong rain and wind can move furniture, damage plants, block drains or expose weak points around windows and doors." },
+          { type: "paragraph", text: "Even a small balcony should be checked before leaving. Remove loose items, secure furniture, check plant pots and make sure drains are clear. On terraces, look for leaves, debris or anything that could block water flow during heavy rain." },
+          { type: "paragraph", text: "For villas or townhouses, check gates, external lights, gutters, garden furniture, irrigation systems, pool equipment and sheds. If you have trees or tall plants near the house, consider whether they need pruning before the wetter months." },
+          { type: "paragraph", text: "Before leaving:" },
+          {
+            type: "list",
+            items: [
+              "Secure outdoor furniture",
+              "Remove light objects from balconies and terraces",
+              "Clear leaves and debris from drains where accessible",
+              "Check external doors, shutters and locks",
+              "Store cushions and fabrics indoors",
+              "Check outdoor taps and hoses",
+              "Review garden or pool maintenance arrangements",
+              "Ask someone to check outside areas after storms",
+            ],
+          },
+          { type: "paragraph", text: "Outdoor checks are particularly important in coastal or exposed areas around Setubal, Sesimbra, Troia, Almada and parts of Lisbon. Winter weather may be mild, but wind and rain can still create problems for unattended homes." },
+        ],
+      },
+      {
+        heading: "Cleaning before departure",
+        content: [
+          { type: "paragraph", text: "A clean property is easier to leave and easier to reopen. It also reduces the chance of pests, odours and unpleasant surprises when you return." },
+          { type: "paragraph", text: "Before leaving, remove rubbish, empty food waste, clean surfaces and check cupboards. Do not leave open packets of food, fruit, crumbs or bins. Clean the fridge and decide whether it will stay on or be switched off. If switching it off, leave the door open to avoid smells." },
+          { type: "paragraph", text: "Bathrooms should be cleaned and dried as much as possible. Towels, bedding and laundry should be fully dry before storage. Damp fabrics left in a closed room over winter can quickly become musty." },
+          { type: "paragraph", text: "If you use the home only a few times a year, consider arranging a departure clean and a pre-arrival clean. Reliable housekeeping Setubal or Lisbon support can make a big difference, especially if you travel with family or arrive late after a flight." },
+          { type: "paragraph", text: "Before leaving:" },
+          {
+            type: "list",
+            items: [
+              "Empty bins",
+              "Remove perishables",
+              "Clean fridge and kitchen surfaces",
+              "Check cupboards for open food",
+              "Wash and dry linen properly",
+              "Store bedding in a dry place",
+              "Clean bathrooms",
+              "Vacuum or sweep floors",
+              "Remove damp towels and bath mats",
+              "Book a pre-arrival clean if needed",
+            ],
+          },
+          { type: "paragraph", text: "Winter cleaning is not only about appearance. It is part of keeping the property fresh, hygienic and ready for the next visit." },
+        ],
+      },
+      {
+        heading: "Why winter checks matter more for empty homes",
+        content: [
+          { type: "paragraph", text: "Winter checks matter because empty homes are quieter, colder and less ventilated. Nobody is opening windows, noticing smells, spotting water marks, collecting post or realising that something has changed." },
+          { type: "paragraph", text: "A regular property check gives you visibility while you are away. It does not guarantee that nothing will happen, but it means the property is not left unnoticed for months." },
+          { type: "paragraph", text: "A winter property check may include airing the home, checking for damp or leaks, looking at windows and doors, inspecting outdoor areas, checking post, running taps, flushing toilets and sending photos or notes to the owner." },
+          { type: "paragraph", text: "For second-home owners and absent owners, this can reduce stress. You do not have to wonder whether everything is fine. You have a clear update from someone who has been there." },
+        ],
+      },
+    ],
+    conclusion: [
+      "CasaMinder provides calm, practical property care for owners who live away, including winter property checks, keyholding, housekeeping coordination and arrival preparation across Lisbon, Setubal and surrounding areas.",
+      "Before leaving your Portuguese home empty this winter, book a CasaMinder property check and receive a clear, practical update on what your property may need while you are away.",
+    ],
+  },
 };
 
 function renderContentBlock(block: GuideContentBlock) {
