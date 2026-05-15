@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useMemo, useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 import { buildWhatsAppUrl, contactEmail, whatsappDisplay } from "@/lib/site-data";
 
 const supportOptions = [
@@ -30,6 +31,10 @@ export function LeadForm() {
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    trackEvent("contact_form_email_click", {
+      location: place,
+      selected_services: services,
+    });
     window.location.href = mailto;
   }
 
@@ -94,7 +99,16 @@ export function LeadForm() {
         <button type="submit" className="inline-flex min-h-11 items-center justify-center rounded-full bg-charcoal px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-stone-800">
           Send by email
         </button>
-        <a href={whatsappUrl} className="inline-flex min-h-11 items-center justify-center rounded-full border border-charcoal/15 bg-white px-5 py-2.5 text-sm font-semibold text-charcoal transition hover:border-coastal hover:text-coastal">
+        <a
+          href={whatsappUrl}
+          onClick={() =>
+            trackEvent("contact_form_whatsapp_click", {
+              location: place,
+              selected_services: services,
+            })
+          }
+          className="inline-flex min-h-11 items-center justify-center rounded-full border border-charcoal/15 bg-white px-5 py-2.5 text-sm font-semibold text-charcoal transition hover:border-coastal hover:text-coastal"
+        >
           Continue on WhatsApp
         </a>
       </div>

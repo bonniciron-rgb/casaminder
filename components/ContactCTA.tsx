@@ -1,4 +1,7 @@
+"use client";
+
 import { ButtonLink } from "./ButtonLink";
+import { trackEvent } from "@/lib/analytics";
 
 export function ContactCTA() {
   return (
@@ -11,7 +14,12 @@ export function ContactCTA() {
             Tell us where your property is and what you need. We will confirm availability, scope and the right next step.
           </p>
         </div>
-        <ButtonLink href="/contact" variant="secondary" className="shrink-0 border-white/20 bg-white text-charcoal">
+        <ButtonLink
+          href="/contact"
+          variant="secondary"
+          className="shrink-0 border-white/20 bg-white text-charcoal"
+          onClick={() => trackEvent("book_property_check_cta_click", { location: "sitewide_contact_cta" })}
+        >
           Book a Property Check
         </ButtonLink>
       </div>

@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ButtonLink } from "@/components/ButtonLink";
+import { ContactQuickActions } from "@/components/ContactQuickActions";
 import { LeadForm } from "@/components/LeadForm";
 import { SectionHeader } from "@/components/SectionHeader";
-import { buildWhatsAppUrl, contactEmail, whatsappDisplay } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Book a Property Check",
@@ -34,31 +33,7 @@ export default function ContactPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="space-y-3 bg-sea/60 p-6 text-sm leading-7 text-muted">
-                <p>
-                  Email:{" "}
-                  <a href={`mailto:${contactEmail}`} className="font-semibold text-charcoal hover:text-coastal">
-                    {contactEmail}
-                  </a>
-                </p>
-                <p>
-                  WhatsApp:{" "}
-                  <a href="https://wa.me/351961747456" className="font-semibold text-charcoal hover:text-coastal">
-                    {whatsappDisplay}
-                  </a>
-                </p>
-                <div className="flex flex-col gap-3 pt-2">
-                  <a
-                    href={`mailto:${contactEmail}?subject=${encodeURIComponent("Property check enquiry")}&body=${encodeURIComponent(quickMessage)}`}
-                    className="inline-flex min-h-11 items-center justify-center rounded-full bg-charcoal px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-stone-800"
-                  >
-                    Email CasaMinder
-                  </a>
-                  <ButtonLink href={buildWhatsAppUrl(quickMessage)} variant="secondary" className="w-full bg-white">
-                    Message on WhatsApp
-                  </ButtonLink>
-                </div>
-              </div>
+              <ContactQuickActions quickMessage={quickMessage} />
             </div>
           </div>
           <LeadForm />
