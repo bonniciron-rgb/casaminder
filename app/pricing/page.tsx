@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { BlogCard } from "@/components/BlogCard";
 import { ContactCTA } from "@/components/ContactCTA";
 import { PricingCard } from "@/components/PricingCard";
 import { SectionHeader } from "@/components/SectionHeader";
-import { pricingPlans } from "@/lib/site-data";
+import { guides, pricingPlans } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -29,6 +30,27 @@ export default function PricingPage() {
             Prices are starting prices and may vary depending on property size, location, frequency and scope.
             Cleaning, laundry, repairs and third-party supplier costs are quoted separately. CasaMinder does not
             provide legal, tax, insurance or brokerage advice.
+          </div>
+
+          <div className="mt-16 border-t border-stone-200 pt-12">
+            <SectionHeader
+              eyebrow="Related guides"
+              title="Helpful reading before comparing plans."
+              description="If you are deciding how much support your property needs, these guides give helpful context before you book."
+            />
+            <div className="mt-8 grid gap-5 md:grid-cols-3">
+              {guides
+                .filter((guide) =>
+                  [
+                    "/guides/empty-home-checklist-portugal",
+                    "/guides/property-care-vs-airbnb-management",
+                    "/guides/winter-empty-home-checks",
+                  ].includes(guide.href),
+                )
+                .map((guide) => (
+                  <BlogCard key={guide.href} {...guide} />
+                ))}
+            </div>
           </div>
         </div>
       </section>

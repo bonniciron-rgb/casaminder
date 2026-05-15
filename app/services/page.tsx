@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { BlogCard } from "@/components/BlogCard";
 import { ContactCTA } from "@/components/ContactCTA";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ServiceCard } from "@/components/ServiceCard";
-import { services } from "@/lib/site-data";
+import { guides, services } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -109,6 +110,27 @@ export default function ServicesPage() {
             {services.map((service, index) => (
               <ServiceCard key={service.title} {...service} index={index} />
             ))}
+          </div>
+
+          <div className="mt-16 border-t border-stone-200 pt-12">
+            <SectionHeader
+              eyebrow="Related guides"
+              title="Useful reading before you choose a care plan."
+              description="These guides explain what property checks, keyholding and owner support look like in practice for homes in Lisbon, Setubal and surrounding areas."
+            />
+            <div className="mt-8 grid gap-5 md:grid-cols-3">
+              {guides
+                .filter((guide) =>
+                  [
+                    "/guides/property-care-vs-airbnb-management",
+                    "/guides/keyholding-property-checks-lisbon-setubal",
+                    "/guides/protect-portuguese-property-while-away",
+                  ].includes(guide.href),
+                )
+                .map((guide) => (
+                  <BlogCard key={guide.href} {...guide} />
+                ))}
+            </div>
           </div>
         </div>
       </section>

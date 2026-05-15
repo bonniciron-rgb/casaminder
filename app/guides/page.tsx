@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { BlogCard } from "@/components/BlogCard";
+import { ButtonLink } from "@/components/ButtonLink";
 import { SectionHeader } from "@/components/SectionHeader";
 import { guides } from "@/lib/site-data";
 
@@ -46,6 +47,28 @@ export default function GuidesPage() {
             {guides.map((guide) => (
               <BlogCard key={guide.href} {...guide} />
             ))}
+          </div>
+
+          <div className="mt-16 rounded-3xl bg-sea/45 p-6 shadow-soft sm:p-8">
+            <SectionHeader
+              eyebrow="Next step"
+              title="Turn the guidance into a practical care plan."
+              description="If a guide matches what you are dealing with, the next useful step is to review services, compare plans, confirm coverage and book a property check."
+            />
+            <div className="mt-8 flex flex-wrap gap-3">
+              <ButtonLink href="/services" variant="secondary">
+                View services
+              </ButtonLink>
+              <ButtonLink href="/pricing" variant="secondary">
+                View pricing
+              </ButtonLink>
+              <ButtonLink href="/areas" variant="secondary">
+                Check coverage
+              </ButtonLink>
+              <ButtonLink href="/contact">
+                Book a property check
+              </ButtonLink>
+            </div>
           </div>
         </div>
       </section>
