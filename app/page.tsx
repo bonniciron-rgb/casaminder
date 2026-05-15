@@ -10,7 +10,7 @@ import { PricingCard } from "@/components/PricingCard";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ServiceCard } from "@/components/ServiceCard";
 import { TrustBar } from "@/components/TrustBar";
-import { guides, pricingPlans, services } from "@/lib/site-data";
+import { areas, contactEmail, faqs, guides, pricingPlans, services, whatsappDisplay } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Property Care & Home Watch Services in Lisbon and Setubal",
@@ -21,12 +21,42 @@ export const metadata: Metadata = {
 export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "CasaMinder",
-    description: "Property care, home watch, keyholding, housekeeping and owner support in Lisbon and Setubal.",
-    areaServed: ["Setubal", "Lisbon", "Azeitao", "Palmela", "Sesimbra", "Almada", "Montijo", "Alcochete", "Seixal"],
-    serviceType: ["Property checks Lisbon", "Keyholding Lisbon", "Second home care Portugal", "Housekeeping Setubal"],
-    url: "https://casaminder.com",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://casaminder.com/#business",
+        name: "CasaMinder",
+        legalName: "LUCIDA ORIGEM, UNIPESSOAL, LDA",
+        description: "Property care, home watch, keyholding, housekeeping and owner support in Lisbon and Setubal.",
+        url: "https://casaminder.com",
+        email: contactEmail,
+        telephone: whatsappDisplay,
+        areaServed: areas.map((area) => ({
+          "@type": "Place",
+          name: area,
+        })),
+        makesOffer: services.map((service) => ({
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: service.title,
+            description: service.description,
+          },
+        })),
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://casaminder.com/#faq",
+        mainEntity: faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      },
+    ],
   };
 
   return (
