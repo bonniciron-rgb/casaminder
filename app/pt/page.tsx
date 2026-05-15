@@ -6,59 +6,59 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { guides } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "CasaMinder em Portugues",
+  title: "CasaMinder em Português",
   description:
-    "Cuidado de propriedades em Portugal para proprietarios ausentes, com verificacoes, guarda de chaves, limpeza e apoio local em Lisboa e Setubal.",
+    "Cuidado de propriedades em Portugal para proprietários ausentes, com verificações, guarda de chaves, limpeza e apoio local em Lisboa e Setúbal.",
 };
 
 const servicesPt = [
   {
-    title: "Visitas de verificacao",
-    description: "Inspecoes regulares com fotografias, notas sobre o estado da casa e comunicacao clara.",
+    title: "Visitas de verificação",
+    description: "Inspeções regulares com fotografias, notas sobre o estado da casa e comunicação clara.",
   },
   {
     title: "Guarda de chaves e acessos",
-    description: "Guarda segura de chaves e acesso controlado para limpeza, manutencao ou familiares.",
+    description: "Guarda segura de chaves e acesso controlado para limpeza, manutenção ou familiares.",
   },
   {
-    title: "Limpeza e preparacao",
-    description: "Areamento, limpeza, troca de roupa e preparacao antes da chegada do proprietario.",
+    title: "Limpeza e preparação",
+    description: "Areamento, limpeza, troca de roupa e preparação antes da chegada do proprietário.",
   },
   {
-    title: "Coordenacao de manutencao",
-    description: "Ajudamos a articular fornecedores locais e a acompanhar o que precisa de atencao.",
+    title: "Coordenação de manutenção",
+    description: "Ajudamos a articular fornecedores locais e a acompanhar o que precisa de atenção.",
   },
 ];
 
 const plansPt = [
   {
     name: "Essential Care",
-    price: "desde 89 EUR/mes",
+    price: "desde 89 EUR/mês",
     items: [
-      "Uma visita agendada por mes",
-      "Relatorio fotografico base",
-      "Verificacao de portas, janelas, fugas e humidade",
-      "Areamento do imovel",
-      "Verificacao do correio",
+      "Uma visita agendada por mês",
+      "Relatório fotográfico base",
+      "Verificação de portas, janelas, fugas e humidade",
+      "Areamento do imóvel",
+      "Verificação do correio",
     ],
   },
   {
     name: "Safe Home Plus",
-    price: "desde 149 EUR/mes",
+    price: "desde 149 EUR/mês",
     items: [
-      "Duas visitas agendadas por mes",
-      "Atualizacao detalhada com fotos ou video",
-      "Verificacao de contadores e utilidades",
+      "Duas visitas agendadas por mês",
+      "Atualização detalhada com fotos ou vídeo",
+      "Verificação de contadores e utilidades",
       "Torneiras e autoclismos testados",
-      "Coordenacao de uma visita de fornecedor",
+      "Coordenação de uma visita de fornecedor",
     ],
   },
 ];
 
 const areasPt = [
   "Lisboa",
-  "Setubal",
-  "Azeitao",
+  "Setúbal",
+  "Azeitão",
   "Palmela",
   "Sesimbra",
   "Almada",
@@ -70,24 +70,24 @@ const areasPt = [
 
 const faqsPt = [
   {
-    question: "A CasaMinder so trabalha com alojamento local?",
+    question: "A CasaMinder só trabalha com alojamento local?",
     answer:
-      "Nao. O foco principal e apoiar proprietarios ausentes, segundas habitacoes, expatriados e senhorios que querem o imovel acompanhado enquanto estao fora.",
+      "Não. O foco principal é apoiar proprietários ausentes, segundas habitações, expatriados e senhorios que querem o imóvel acompanhado enquanto estão fora.",
   },
   {
     question: "Podem guardar chaves?",
     answer:
-      "Sim. Disponibilizamos guarda segura de chaves e coordenacao de acessos para proprietarios, familiares autorizados, equipas de limpeza e fornecedores.",
+      "Sim. Disponibilizamos guarda segura de chaves e coordenação de acessos para proprietários, familiares autorizados, equipas de limpeza e fornecedores.",
   },
   {
     question: "Recebo fotos depois de cada visita?",
     answer:
-      "Sim. As visitas podem incluir atualizacoes com fotografias e notas praticas para que saiba o estado da propriedade.",
+      "Sim. As visitas podem incluir atualizações com fotografias e notas práticas para que saiba o estado da propriedade.",
   },
   {
-    question: "Trabalham em Lisboa e Setubal?",
+    question: "Trabalham em Lisboa e Setúbal?",
     answer:
-      "Sim. A area inicial inclui Lisboa, Setubal e zonas envolventes como Azeitao, Palmela, Sesimbra, Almada, Montijo e Alcochete.",
+      "Sim. A área inicial inclui Lisboa, Setúbal e zonas envolventes como Azeitão, Palmela, Sesimbra, Almada, Montijo e Alcochete.",
   },
 ];
 
@@ -99,29 +99,30 @@ export default function PortugueseHomePage() {
         <div className="mx-auto grid min-h-[calc(100vh-76px)] max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
           <div className="relative z-10">
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-coastal">
-              Cuidado de propriedades em Portugal, para proprietarios que vivem fora
+              Cuidado de propriedades em Portugal, para proprietários que vivem fora
             </p>
             <h1 className="text-balance font-serif text-5xl font-semibold leading-tight text-charcoal sm:text-6xl lg:text-7xl">
-              A sua casa em Portugal, acompanhada enquanto esta fora.
+              A sua casa em Portugal, acompanhada enquanto está fora.
             </h1>
             <p className="mt-6 max-w-2xl text-xl leading-8 text-muted">
-              A CasaMinder presta um apoio local de confianca com verificacoes da propriedade, guarda de chaves, limpeza e coordenacao pratica em Lisboa e Setubal.
+              A CasaMinder presta um apoio local de confiança com verificações da propriedade, guarda de chaves,
+              limpeza e coordenação prática em Lisboa e Setúbal.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="/pt/contact">Marcar verificacao</ButtonLink>
+              <ButtonLink href="/pt/contact">Marcar verificação</ButtonLink>
               <ButtonLink href="/pt#precos" variant="secondary">
                 Ver planos
               </ButtonLink>
             </div>
             <p className="mt-6 text-sm font-medium text-muted">
-              Para proprietarios de segunda habitacao, expatriados, senhorios e investidores.
+              Para proprietários de segunda habitação, expatriados, senhorios e investidores.
             </p>
           </div>
           <div className="relative z-10">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-sand shadow-card">
               <Image
                 src="/images/hero-portugal-home-care.png"
-                alt="Interior de casa em Portugal preparado e verificado para um proprietario ausente"
+                alt="Interior de casa em Portugal preparado e verificado para um proprietário ausente"
                 fill
                 priority
                 sizes="(min-width: 1024px) 44vw, 100vw"
@@ -129,12 +130,12 @@ export default function PortugueseHomePage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/45 via-charcoal/5 to-transparent" aria-hidden="true" />
               <div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/70 bg-white/82 p-5 shadow-soft backdrop-blur">
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-coastal">Atualizacao da visita</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-coastal">Atualização da visita</p>
                 <h2 className="mt-3 font-serif text-2xl font-semibold text-charcoal sm:text-3xl">
                   Tudo seguro. Areamento feito. Fotografias enviadas.
                 </h2>
                 <p className="mt-4 leading-7 text-muted">
-                  Supervisao calma e pratica para proprietarios que precisam de alguem no terreno.
+                  Supervisão calma e prática para proprietários que precisam de alguém no terreno.
                 </p>
               </div>
             </div>
@@ -145,15 +146,15 @@ export default function PortugueseHomePage() {
       <section id="sobre" className="px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeader
-            title="Imoveis vazios precisam de mais do que uma porta fechada."
-            description="Quando uma casa fica sem uso durante semanas ou meses, pequenos problemas podem crescer sem serem detetados. A CasaMinder oferece olhos no terreno, atualizacoes claras e apoio local para decisoes mais tranquilas."
+            title="Imóveis vazios precisam de mais do que uma porta fechada."
+            description="Quando uma casa fica sem uso durante semanas ou meses, pequenos problemas podem crescer sem serem detetados. A CasaMinder oferece olhos no terreno, atualizações claras e apoio local para decisões mais tranquilas."
           />
         </div>
       </section>
 
       <section id="servicos" className="bg-white px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <SectionHeader title="Servicos flexiveis para a forma como usa a sua propriedade." />
+          <SectionHeader title="Serviços flexíveis para a forma como usa a sua propriedade." />
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {servicesPt.map((service, index) => (
               <article key={service.title} className="rounded-2xl border border-stone-200 bg-white p-6 shadow-soft">
@@ -172,7 +173,7 @@ export default function PortugueseHomePage() {
         <div className="mx-auto max-w-7xl">
           <SectionHeader
             title="Planos mensais simples."
-            description="Pontos de partida claros, ajustados ao tamanho do imovel, localizacao, frequencia e nivel de apoio necessario."
+            description="Pontos de partida claros, ajustados ao tamanho do imóvel, localização, frequência e nível de apoio necessário."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {plansPt.map((plan) => (
@@ -194,7 +195,7 @@ export default function PortugueseHomePage() {
             ))}
           </div>
           <p className="mt-6 text-sm leading-6 text-muted">
-            Os valores apresentados sao base e podem variar conforme dimensao do imovel, localizacao, frequencia e ambito do servico.
+            Os valores apresentados são base e podem variar conforme dimensão do imóvel, localização, frequência e âmbito do serviço.
           </p>
         </div>
       </section>
@@ -202,8 +203,8 @@ export default function PortugueseHomePage() {
       <section id="zonas" className="px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <SectionHeader
-            title="Cobertura em Lisboa, Setubal e zonas envolventes."
-            description="Se a sua propriedade estiver perto destas zonas mas nao estiver listada, fale connosco e confirmamos disponibilidade."
+            title="Cobertura em Lisboa, Setúbal e zonas envolventes."
+            description="Se a sua propriedade estiver perto destas zonas mas não estiver listada, fale connosco e confirmamos disponibilidade."
           />
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {areasPt.map((area) => (
@@ -237,8 +238,8 @@ export default function PortugueseHomePage() {
       <section className="px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeader
-            title="Guias uteis para proprietarios ausentes."
-            description="Enquanto terminamos a traducao completa, estes guias continuam disponiveis em ingles com informacao pratica sobre verificacoes, guarda de chaves e cuidados sazonais."
+            title="Guias úteis para proprietários ausentes."
+            description="Enquanto terminamos a tradução completa, estes guias continuam disponíveis em inglês com informação prática sobre verificações, guarda de chaves e cuidados sazonais."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {guides.slice(0, 3).map((guide) => (

@@ -5,9 +5,9 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { contactEmail, whatsappDisplay } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Contacto em Portugues",
+  title: "Contacto em Português",
   description:
-    "Fale com a CasaMinder para marcar uma verificacao da propriedade ou pedir apoio local em Lisboa, Setubal e arredores.",
+    "Fale com a CasaMinder para marcar uma verificação da propriedade ou pedir apoio local em Lisboa, Setúbal e arredores.",
 };
 
 export default function PortugueseContactPage() {
@@ -18,14 +18,14 @@ export default function PortugueseContactPage() {
           <div>
             <SectionHeader
               eyebrow="Contacto"
-              title="Marcar uma verificacao."
-              description="Diga-nos onde fica o seu imovel e que tipo de apoio precisa. Pode enviar o pedido por email ou continuar no WhatsApp."
+              title="Marcar uma verificação."
+              description="Diga-nos onde fica o seu imóvel e que tipo de apoio precisa. Pode enviar o pedido por email ou continuar no WhatsApp."
             />
             <div className="mt-8 overflow-hidden rounded-3xl bg-white shadow-card">
               <div className="relative aspect-[3/2] bg-sand">
                 <Image
                   src="/images/book-property-check.png"
-                  alt="Mesa com chaves, caderno e cafe para pedido de verificacao"
+                  alt="Mesa com chaves, caderno e café para pedido de verificação"
                   fill
                   sizes="(min-width: 1024px) 32vw, 100vw"
                   className="object-cover"

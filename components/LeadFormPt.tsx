@@ -5,25 +5,25 @@ import { trackEvent } from "@/lib/analytics";
 import { buildWhatsAppUrl, contactEmail, whatsappDisplay } from "@/lib/site-data";
 
 const supportOptions = [
-  "Verificacoes da propriedade",
+  "Verificações da propriedade",
   "Guarda de chaves",
   "Limpeza",
-  "Manutencao",
-  "Preparacao para chegada",
+  "Manutenção",
+  "Preparação para chegada",
   "Apoio a arrendamento",
-  "Nao tenho a certeza",
+  "Não tenho a certeza",
 ];
 
 export function LeadFormPt() {
   const [location, setLocation] = useState("");
   const [selected, setSelected] = useState<string[]>([]);
 
-  const services = selected.length ? selected.join(", ") : "[servicos]";
-  const place = location.trim() || "[localizacao]";
-  const message = `Ola CasaMinder, gostaria de marcar uma verificacao da propriedade. O meu imovel fica em ${place}. Preciso de ajuda com ${services}.`;
+  const services = selected.length ? selected.join(", ") : "[serviços]";
+  const place = location.trim() || "[localização]";
+  const message = `Olá CasaMinder, gostaria de marcar uma verificação da propriedade. O meu imóvel fica em ${place}. Preciso de ajuda com ${services}.`;
 
   const whatsappUrl = useMemo(() => buildWhatsAppUrl(message), [message]);
-  const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent("Pedido de verificacao da propriedade")}&body=${encodeURIComponent(message)}`;
+  const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent("Pedido de verificação da propriedade")}&body=${encodeURIComponent(message)}`;
 
   function toggleService(option: string) {
     setSelected((current) => (current.includes(option) ? current.filter((item) => item !== option) : [...current, option]));
@@ -51,11 +51,11 @@ export function LeadFormPt() {
           <input required type="email" name="email" className="rounded-xl border border-stone-200 px-4 py-3 font-normal outline-none focus:border-coastal" />
         </label>
         <label className="grid gap-2 text-sm font-semibold text-charcoal">
-          Numero de WhatsApp
+          Número de WhatsApp
           <input name="whatsapp" className="rounded-xl border border-stone-200 px-4 py-3 font-normal outline-none focus:border-coastal" />
         </label>
         <label className="grid gap-2 text-sm font-semibold text-charcoal">
-          Localizacao do imovel
+          Localização do imóvel
           <input
             required
             name="location"
@@ -65,7 +65,7 @@ export function LeadFormPt() {
           />
         </label>
         <label className="grid gap-2 text-sm font-semibold text-charcoal">
-          Tipo de imovel
+          Tipo de imóvel
           <select name="propertyType" className="rounded-xl border border-stone-200 px-4 py-3 font-normal outline-none focus:border-coastal">
             <option>Apartamento</option>
             <option>Moradia</option>

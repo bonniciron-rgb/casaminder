@@ -2,11 +2,11 @@ import Link from "next/link";
 import { contactEmail, whatsappDisplay } from "@/lib/site-data";
 
 const footerLinks = [
-  { label: "Servicos", href: "/pt#servicos" },
-  { label: "Precos", href: "/pt#precos" },
+  { label: "Serviços", href: "/pt#servicos" },
+  { label: "Preços", href: "/pt#precos" },
   { label: "Zonas", href: "/pt#zonas" },
   { label: "Contacto", href: "/pt/contact" },
-  { label: "Politica de Privacidade", href: "/privacy" },
+  { label: "Política de Privacidade", href: "/privacy" },
   { label: "Termos", href: "/terms" },
 ];
 
@@ -19,7 +19,7 @@ export function PtFooter() {
             CasaMinder
           </Link>
           <p className="mt-3 max-w-md text-sm leading-6 text-white/75">
-            Cuidado de propriedades em Portugal, para proprietarios que vivem fora.
+            Cuidado de propriedades em Portugal, para proprietários que vivem fora.
           </p>
           <div className="mt-6 space-y-2 text-sm text-white/75">
             <p>
@@ -34,12 +34,12 @@ export function PtFooter() {
             </p>
           </div>
           <p className="mt-8 max-w-3xl text-xs leading-6 text-white/60">
-            A CasaMinder presta servicos de cuidado de propriedades, coordenacao de limpeza e apoio ao proprietario.
-            Nao prestamos aconselhamento juridico, fiscal, de seguros ou de mediacao imobiliaria.
+            A CasaMinder presta serviços de cuidado de propriedades, coordenação de limpeza e apoio ao proprietário.
+            Não prestamos aconselhamento jurídico, fiscal, de seguros ou de mediação imobiliária.
           </p>
           <p className="mt-4 text-xs leading-6 text-white/50">Developed by OnPoint Consultancy.</p>
         </div>
-        <nav className="grid grid-cols-2 gap-3 text-sm" aria-label="Navegacao do rodape">
+        <nav className="grid grid-cols-2 gap-3 text-sm" aria-label="Navegação do rodapé">
           {footerLinks.map((link) => (
             <Link key={link.href} href={link.href} className="text-white/75 hover:text-white">
               {link.label}

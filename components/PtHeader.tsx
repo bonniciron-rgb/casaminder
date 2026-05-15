@@ -2,8 +2,8 @@ import Link from "next/link";
 import { ButtonLink } from "./ButtonLink";
 
 const navItems = [
-  { label: "Servicos", href: "/pt#servicos" },
-  { label: "Precos", href: "/pt#precos" },
+  { label: "Serviços", href: "/pt#servicos" },
+  { label: "Preços", href: "/pt#precos" },
   { label: "Zonas", href: "/pt#zonas" },
   { label: "Sobre", href: "/pt#sobre" },
   { label: "Contacto", href: "/pt/contact" },
@@ -13,10 +13,10 @@ export function PtHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-stone-200/80 bg-cream/90 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8">
-        <Link href="/pt" className="font-serif text-2xl font-semibold text-charcoal" aria-label="CasaMinder inicio">
+        <Link href="/pt" className="font-serif text-2xl font-semibold text-charcoal" aria-label="CasaMinder início">
           CasaMinder
         </Link>
-        <nav className="hidden items-center gap-7 text-sm font-semibold text-charcoal md:flex" aria-label="Navegacao principal">
+        <nav className="hidden items-center gap-7 text-sm font-semibold text-charcoal md:flex" aria-label="Navegação principal">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href} className="transition hover:text-coastal">
               {item.label}
@@ -28,7 +28,7 @@ export function PtHeader() {
             EN
           </Link>
           <ButtonLink href="/pt/contact" className="hidden sm:inline-flex">
-            Marcar verificacao
+            Marcar verificação
           </ButtonLink>
           <details className="relative md:hidden">
             <summary
@@ -47,7 +47,7 @@ export function PtHeader() {
                 </Link>
               ))}
               <ButtonLink href="/pt/contact" className="mt-2 w-full">
-                Marcar verificacao
+                Marcar verificação
               </ButtonLink>
             </div>
           </details>
