@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { AreaGrid } from "@/components/AreaGrid";
 import { BlogCard } from "@/components/BlogCard";
@@ -11,6 +12,12 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { TrustBar } from "@/components/TrustBar";
 import { guides, pricingPlans, services } from "@/lib/site-data";
 
+export const metadata: Metadata = {
+  title: "Property Care & Home Watch Services in Lisbon and Setubal",
+  description:
+    "Trusted property care in Portugal for absent owners, including property checks, keyholding, housekeeping and owner support across Lisbon and Setubal.",
+};
+
 export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -19,7 +26,7 @@ export default function Home() {
     description: "Property care, home watch, keyholding, housekeeping and owner support in Lisbon and Setubal.",
     areaServed: ["Setubal", "Lisbon", "Azeitao", "Palmela", "Sesimbra", "Almada", "Montijo", "Alcochete", "Seixal"],
     serviceType: ["Property checks Lisbon", "Keyholding Lisbon", "Second home care Portugal", "Housekeeping Setubal"],
-    url: "https://casaminder.pt",
+    url: "https://casaminder.com",
   };
 
   return (

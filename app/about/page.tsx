@@ -5,8 +5,9 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { TrustBar } from "@/components/TrustBar";
 
 export const metadata: Metadata = {
-  title: "About",
-  description: "CasaMinder provides calm, human property care and owner support for people who live away from their homes in Portugal.",
+  title: "About CasaMinder",
+  description:
+    "Learn how CasaMinder supports absent owners, second-home owners and landlords with trusted property care in Lisbon and Setubal.",
 };
 
 export default function AboutPage() {

@@ -6,8 +6,9 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { buildWhatsAppUrl, contactEmail, whatsappDisplay } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Book a property check with CasaMinder for homes in Lisbon, Setubal and surrounding areas.",
+  title: "Book a Property Check",
+  description:
+    "Contact CasaMinder to book a property check, ask about keyholding, or arrange owner support in Lisbon, Setubal and nearby areas.",
 };
 
 export default function ContactPage() {
@@ -21,7 +22,7 @@ export default function ContactPage() {
             <SectionHeader
               eyebrow="Contact"
               title="Book a property check."
-              description="Tell us where your property is, how often it is empty and what support you need. You can send the enquiry by email or continue on WhatsApp."
+              description="Tell us where your property is and what support you need. You can send the enquiry by email or continue on WhatsApp."
             />
             <div className="mt-8 overflow-hidden rounded-3xl bg-white shadow-card">
               <div className="relative aspect-[3/2] bg-sand">

@@ -6,7 +6,8 @@ import { SectionHeader } from "@/components/SectionHeader";
 
 export const metadata: Metadata = {
   title: "Areas We Cover",
-  description: "CasaMinder covers Setubal, Lisbon, Azeitao, Palmela, Sesimbra, Almada, Caparica, Montijo, Alcochete and nearby areas.",
+  description:
+    "CasaMinder covers Lisbon, Setubal, Azeitao, Palmela, Sesimbra, Almada, Costa da Caparica, Montijo, Alcochete and nearby areas.",
 };
 
 export default function AreasPage() {

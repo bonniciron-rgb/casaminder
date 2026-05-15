@@ -6,7 +6,8 @@ import { pricingPlans } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Pricing",
-  description: "Simple monthly property care plans for second homes, landlords and absent owners across Lisbon and Setúbal.",
+  description:
+    "Simple monthly property care plans for second homes, landlords and absent owners across Lisbon and Setubal.",
 };
 
 export default function PricingPage() {
@@ -25,7 +26,9 @@ export default function PricingPage() {
             ))}
           </div>
           <div className="mt-8 rounded-2xl border border-stone-200 bg-white p-6 text-sm leading-7 text-muted shadow-soft">
-            Prices are starting prices and may vary depending on property size, location, frequency and scope. Cleaning, laundry, repairs and third-party supplier costs are quoted separately. CasaMinder does not provide legal, tax, insurance or brokerage advice.
+            Prices are starting prices and may vary depending on property size, location, frequency and scope.
+            Cleaning, laundry, repairs and third-party supplier costs are quoted separately. CasaMinder does not
+            provide legal, tax, insurance or brokerage advice.
           </div>
         </div>
       </section>

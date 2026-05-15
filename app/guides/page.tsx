@@ -6,7 +6,8 @@ import { guides } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Guides",
-  description: "Practical guides for absent owners, second-home owners and landlords caring for property in Portugal.",
+  description:
+    "Practical guides for absent owners, second-home owners and landlords caring for property in Portugal, Lisbon and Setubal.",
 };
 
 export default function GuidesPage() {
