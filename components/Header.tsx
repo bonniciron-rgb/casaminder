@@ -17,6 +17,9 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-3">
+          <Link href="/pt" className="hidden rounded-full border border-stone-200 bg-white px-3 py-2 text-xs font-semibold text-charcoal sm:inline-flex">
+            PT
+          </Link>
           <ButtonLink href="/contact" className="hidden sm:inline-flex">
             Book a Property Check
           </ButtonLink>
@@ -28,6 +31,9 @@ export function Header() {
               <span aria-hidden="true">≡</span>
             </summary>
             <div className="absolute right-0 mt-3 w-64 rounded-2xl border border-stone-200 bg-white p-3 shadow-card">
+              <Link href="/pt" className="mb-2 block rounded-xl px-4 py-3 text-sm font-semibold text-charcoal hover:bg-sand/50">
+                Versao em Portugues
+              </Link>
               {navItems.map((item) => (
                 <Link key={item.href} href={item.href} className="block rounded-xl px-4 py-3 text-sm font-semibold text-charcoal hover:bg-sand/50">
                   {item.label}
