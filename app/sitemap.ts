@@ -14,6 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guides",
     "/privacy",
     "/terms",
+    "/pt",
+    "/pt/services",
+    "/pt/pricing",
+    "/pt/areas",
+    "/pt/about",
+    "/pt/contact",
   ];
 
   const routes = [...staticRoutes, ...guides.map((guide) => guide.href)];
